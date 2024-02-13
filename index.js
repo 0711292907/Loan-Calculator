@@ -8,3 +8,6 @@ document.querySelector('#loan-form').addEventListener('submit', function(e){
     setTimeout(calculateResults, 2000);
     e.preventDefault();
 });
+
+// Calculate the results
+function calculateResults(){
