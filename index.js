@@ -26,3 +26,8 @@ function calculateResults(){
        // Calculate monthly payments
        const x = Math.pow(1 + calculatedInterest, calculatedPayments);
        const monthly = (principle * x * calculatedInterest) / (x - 1);
+       if(isFinite(monthly)){
+          monthlyPayment.value = monthly.toFixed(2);
+          totalPayment.value = (monthly * calculatedPayments).toFixed(2);
+          totalInterest.value = ((monthly * calculatedPayments) - principle).toFixed(2);
+  
