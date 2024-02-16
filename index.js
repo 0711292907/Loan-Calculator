@@ -30,4 +30,14 @@ function calculateResults(){
           monthlyPayment.value = monthly.toFixed(2);
           totalPayment.value = (monthly * calculatedPayments).toFixed(2);
           totalInterest.value = ((monthly * calculatedPayments) - principle).toFixed(2);
+
+            // Show results and hide the loader
+        document.querySelector('#results').style.display = 'block';
+        document.querySelector('#loading').style.display = 'none';
+    } else {
+        // Show an error message
+        showError('Please check your inputs');
+    }
+}
+
   
