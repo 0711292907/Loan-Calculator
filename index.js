@@ -52,6 +52,10 @@ function showError(error){
      // Get elements
      const card = document.querySelector('.card');
      const heading = document.querySelector('.heading');
+
+       // Add a class to the error message div
+    errorDiv.className = 'alert alert-danger';
+    
  
 
 
