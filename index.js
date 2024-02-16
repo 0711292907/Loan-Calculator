@@ -55,6 +55,10 @@ function showError(error){
 
        // Add a class to the error message div
     errorDiv.className = 'alert alert-danger';
+
+    // Create a text nod and append to div
+    errorDiv.appendChild(document.createTextNode(error));
+
     
  
 
