@@ -49,5 +49,10 @@ function showError(error){
       // Create a div for the error message
     const errorDiv = document.createElement('div');
 
+     // Get elements
+     const card = document.querySelector('.card');
+     const heading = document.querySelector('.heading');
+ 
+
 
   
