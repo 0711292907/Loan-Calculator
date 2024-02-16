@@ -59,6 +59,9 @@ function showError(error){
     // Create a text nod and append to div
     errorDiv.appendChild(document.createTextNode(error));
 
+     // Insert the error message above the heading
+     card.insertBefore(errorDiv, heading);
+
     
  
 
